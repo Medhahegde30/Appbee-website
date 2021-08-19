@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>AppBee</title>
+</head>
+<body>
+  
+     <!--Navbar-->      
+     <div class="header">
+        <a class="navbar-brand" href="#"><img  class="navbar-brand" src="appbee-logo-with-name.png" alt="Logo"></a>
+    
+         
+        <a id="menu-toggle" href="#" class="toggle">
+          <!-- <button class="navbar-toggler collapsed"
+            type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button> -->
+
+    <img class="appbee-menu" src="appbee-menu.png" alt="menu">
+        </a>
+    
+    
+        <div id="sidebar-wrapper">
+          <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-default btn-lg text-right toggle"><button type="button" class="close"
+                aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button></a>
+  
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutus.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactus.html">Contact Us</a>
+              </li>
+              
+          </ul>
+        </div>
+      
+      </div>
+      <!-- /navbar -->
+
+         <div class="contact">
+             <div class="container">
+             <div class="row">
+                 <div class="col-md-5 offset-md-1">
+                    <h2 class="myfont1">Contact us</h2>
+        <h5 class="myfont4">Have a question? Reach out us! </h5>
+
+        <div class="alert alert-success hidden" id="contactSuccess2">
+            <strong>Success!</strong> Your message has been sent to us.
+        </div>
+        <div class="alert alert-error hidden" id="contactError2">
+            <strong>Error!</strong> There was an error sending your message.
+        </div>
+        <form role="form" method="post" class="myfont4" action="http://appbee.in/index.php/Welcome/contact" data-target="../res/contact-form.php" enctype="multipart/form-data">
+            <div class="form-group has-feedback">
+                <label class="sr-only" for="name2">Name</label>
+                <input type="text" class="form-control" id="name2" placeholder="Your name" name="name" required>
+
+            </div>
+
+            <div class="form-group has-feedback">
+                <label class="sr-only" for="phone">Phone</label>
+                <input type="text" class="form-control" id="phone" placeholder="Your Phone/Mobile Number" name="phone" required>
+
+            </div>
+            <div class="form-group has-feedback">
+                <label class="sr-only" for="email2">Email Address</label>
+                <input type="email" class="form-control" id="email2" placeholder="Your Email address" name="email" required>
+
+            </div>
+
+            <div class="form-group has-feedback">
+                <label class="sr-only" for="email2">Subject</label>
+                <select class="form-control" name="subject">
+                    <option value="">Select Your Subject</option>
+                    <option value="Feedback">Feedback</option>
+                    <option value="Support">Support</option>
+                    <option value="Query">Query</option>
+                </select>
+
+            </div>
+
+            <div class="form-group has-feedback">
+                <label class="sr-only" for="message2">Subject</label>
+                <textarea class="form-control" rows="8" id="message2" placeholder="Your message" name="message" required></textarea>
+
+            </div>
+
+            <input type="submit" style="border-radius: 8%" value="Send" class="btn btn-default1">
+
+            <h3 class="myfont4" style="margin-top: 0px">OR send email directly to <b>vatsa@appbee.in </b></h3>
+
+        </form>
+
+
+                 </div>
+                 <div class="col-md-5 offset-md-1">
+                   <div class="row">
+                       <div class="col-md">
+                        <h5 class="myfont4" style="border-bottom: 4px solid #E9E9E9;margin-bottom: 5px">Address</h5><br>
+                        <h3 class="myfont4" style="margin-top: 0px">appbee</h3>
+                        <h4 class="myfont4">1st Floor, Ksheerabdi Building, College Road</h4>
+                        <h4 class="myfont4">Adarsha Nagara, Sirsi (U.K), Karnataka, 581402</h4>
+                       </div>
+                       <div class="col-md">
+                        <h5 class="myfont4" style="border-bottom: 4px solid #E9E9E9"> Call Us</h5>
+                        <h5 class="myfont4" style="margin-top: 30px"><i class="fa fa-phone">
+                        </i> &nbsp; +91-953-813-4638 <br> &nbsp;&nbsp;&nbsp; &nbsp;   </br>(10-00 AM to 10-00 PM )</h5>
+                       </div>
+                      </div>
+
+                       <div class="mapouter text-center text-md-left"><div class="gmap_canvas"><iframe width="450" height="320" id="gmap_canvas" src="https://maps.google.com/maps?q=appbee&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.online-timer.net"></a></div>
+                       <style>.mapouter{
+                         position:relative;
+                         height:500px;
+                         width:450px;
+                         }
+                         
+                         .gmap_canvas {
+                           overflow:hidden;
+                           background:none!important;
+                           height:600px;
+                           width:450px;
+                           }
+                           
+                           </style>
+                           
+                    </div>
+                  
+
+                 </div>
+             </div>
+
+
+         </div>
+      
+
+
+       
+
+    </div> 
+             
+    </body>
+
+    <script>
+        $("#menu-close").click(function(e) {
+          e.preventDefault();
+          $("#sidebar-wrapper").toggleClass("active");
+        });
+        $("#menu-toggle").click(function(e) {
+          e.preventDefault();
+          $("#sidebar-wrapper").toggleClass("active");
+        });
+      </script>
+
+
+      <script>
+    $(function () {
+        // when the form is submitted
+        $('.contact').on('send', function (e) {
+    
+            // if the validator does not prevent form submit
+            if (!e.isDefaultPrevented()) {
+                var url = "contactus.html";
+    
+                // POST values in the background the the script URL
+                $.ajax({
+                    type: "POST",
+                    url: url,
+                    data: $(this).serialize(),
+                    success: function (data)
+                    {
+                        // data = JSON object that contact.php returns
+    
+                        // we recieve the type of the message: success x danger and apply it to the 
+                        var messageAlert = 'alert-' + data.type;
+                        var messageText = data.message;
+    
+                        // let's compose Bootstrap alert box HTML
+                        var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+                        
+                        // If we have messageAlert and messageText
+                        if (messageAlert && messageText) {
+                            // inject the alert to .messages div in our form
+                            $('.contact').find('.messages').html(alertBox);
+                            // empty the form
+                            $('.contact')[0].reset();
+                        }
+                    }
+                });
+                return false;
+            }
+        })
+    });
+</script>
+
+    </html>
